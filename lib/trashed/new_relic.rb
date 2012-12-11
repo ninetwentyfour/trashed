@@ -20,7 +20,7 @@ module Trashed
 
       def record(data)
         data.each do |name, value|
-          record_newrelic name, value
+          # record_newrelic name, value
           record_statsd   name, value if @statsd
         end
       end
